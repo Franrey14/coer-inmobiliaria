@@ -330,13 +330,7 @@ footer {
   color: #000;
 }
 
-/* Fondo sección de propiedades en alquiler */
-.fondo-alquileres {
-  background-color: ; 
-  padding: 40px 20px;       
-  border-radius: 10px;       
-  margin-bottom: 40px;       
-}
+
 /* Imagen del formulario de contacto */
 .sombra-contacto {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);

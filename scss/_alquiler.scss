@@ -1,0 +1,63 @@
+.seccion-propiedades {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.seccion-propiedades h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.galeria-propiedades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.propiedad {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.propiedad:hover {
+  transform: translateY(-5px);
+}
+
+.propiedad img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.info-propiedad {
+  padding: 1rem;
+  text-align: center;
+}
+
+.info-propiedad h3 {
+  font-size: 1.2rem;
+  color: #d35400;
+  margin-bottom: 0.5rem;
+}
+
+.info-propiedad p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.precio {
+  font-weight: bold;
+  color: #d9534f;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}

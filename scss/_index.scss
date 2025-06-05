@@ -1,0 +1,183 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* imagen del home */
+.fondoprincipal {
+  height: 100vh;
+  background-image: url("../imagenes-videos/WhatsApp\ Image\ 2025-04-09\ at\ 2.09.15\ PM\ \(1\).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.fondoprincipal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.texto-portada {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.texto-portada h1 {
+  font-size: 3rem;
+  color: #F76C2F;
+  margin-bottom: 10px;
+}
+
+.texto-portada p {
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Galería index */
+.galeria {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Propiedades destacadas - index */
+.propiedades-destacadas {
+  padding: 2rem;
+  background-color: #f3f3f3;
+}
+
+.propiedades-destacadas h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.galeria-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.propiedad {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.propiedad:hover {
+  transform: translateY(-5px);
+}
+
+.propiedad img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.info-propiedad {
+  padding: 1rem;
+  text-align: center;
+}
+
+.info-propiedad h3 {
+  font-size: 1.2rem;
+  color: #d35400;
+  margin-bottom: 0.5rem;
+}
+
+.info-propiedad p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.precio {
+  font-weight: bold;
+  color: #d9534f;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.texto-portada h1 {
+  animation: fadeInUp 1.5s ease forwards;
+}
+.grid-ejemplo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.item-grid {
+  background-color: #f3f3f3;
+  padding: 1.8rem;
+  border-radius: 10px;
+  text-align: center;
+  color: #444;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+  cursor: pointer;
+
+  h3 {
+    margin-bottom: 0.7rem;
+    color: #d35400; // naranja oscuro
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  &:hover {
+    background-color: #F76C2F; // naranja vivo
+    color: white;
+    transform: scale(1.07);
+    box-shadow: 0 8px 20px rgba(247, 108, 47, 0.7);
+
+    h3 {
+      color: white;
+    }
+
+    p {
+      color: #f0e6d2; // un blanco crema para el texto secundario
+    }
+  }
+}

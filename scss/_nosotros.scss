@@ -1,0 +1,78 @@
+.video-presentacion {
+  background: url('../imagenes-videos/WhatsApp\ Image\ 2025-04-09\ at\ 2.09.15\ PM\ \(1\).jpg') no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.video-presentacion h2 {
+  color: black;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.video-presentacion video {
+  width: 90%;
+  max-width: 600px;
+  max-height: 60vh;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background: black;
+}
+
+.sobre-nosotros {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 60px 30px;
+  text-align: center;
+  max-width: 900px;
+  margin: 50px auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 2px solid #F76C2F;
+}
+
+.sobre-nosotros h1 {
+  font-size: 2.5rem;
+  color: #F76C2F;
+  margin-bottom: 20px;
+}
+
+.sobre-nosotros p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Grid de servicios */
+.grid-ejemplo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.item-grid {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.item-grid:hover {
+  transform: translateY(-5px);
+}
